@@ -1,0 +1,403 @@
+\documentclass{report}
+\usepackage[utf8]{inputenc}
+\usepackage{xcolor}
+\usepackage{url}
+\usepackage[nottoc]{tocbibind}
+\usepackage{graphicx}
+\usepackage[bottom]{footmisc}
+\usepackage[backend=biber, citestyle=numeric]{biblatex}
+\addbibresource{sources.bib}
+
+ 
+
+\title{Project Document: Project Ideas  \\ Team 1
+}
+\author{Cam Carlson \\
+Bo Paxton\\
+Pranav Nikam\\
+Nick Montemarano}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\begin{abstract}
+Deep learning is a powerful tool which can assist people in their day to day lives. We are exploring various ways to implement machine learning to make the lives of people easier by offering solutions and improvements to common issues in society. Specifically, the two ideas we propose are, a machine learning model which can detect the presence of a wallet in some image. This implementation could be used by CCTV or security systems to assist people in recovering their lost belongings. And second, using a more text based approach, we can classify movie reviews to determine if they are positive or negative. While not as crucial, this idea would allow logistics in the film industry to be more accurate, and enable producers to better understand their audiences' tastes. 
+
+\end{abstract}
+
+\chapter{Milestone 1: Project Ideas}
+
+\section{Introduction}
+
+While brainstorming potential areas of life to implement deep learning, the level of importance that our project would have was a key factor. While the ideas presented here are not curing any diseases or writing symphonies, the quality of life improvements that can be achieved are quite large. 
+
+\section{Project Idea 1: Lost Wallet Identifier}
+
+Given recent advances in object identification in crowded scenarios using deep learning computer vision models, we propose a system that can identify potential lost wallets,  using security cameras. Such a system could be highly useful in public places like airports, malls, or transportation areas where lost personal belongings are common. This project aims to build a deep learning model capable of detecting whether or not a wallet is present in an image, potentially contributing to real-time security and object recovery systems.
+
+\subsection{Applications}
+Potential applications for this project may include (but are not limited to):
+\begin{itemize}
+    \item Automated lost-and-found detection in public spaces
+    \item Surveillance systems for tracking lost objects
+    \item Airport and station security enhancements
+    \item Assistance for individuals with visual impairments
+\end{itemize}
+
+\subsection{Approaches}
+Different approaches to this problem may include:
+
+\begin{itemize}
+    
+    \item \textbf{Deep Learning}: Using learning algorithms such as the Adam optimizer \cite{adamOptimizerGFG}, a model can be trained using some dataset, and tested on some unique validation set. Supervised learning is a potential approach. 
+
+    \item \textbf{Data Augmentation}: To increase the robustness of the model, data augmentation techniques such as random cropping, rotation, and flipping can be applied to increase the variety of training samples and prevent overfitting.
+\end{itemize}
+
+\subsection{Learning Problem}
+
+The learning problem is a \textbf{binary classification} problem, where the task is to classify an image as either containing a wallet or not. This project may also include an element of object detection if the model needs to locate the wallet within the image.
+
+\subsection{Inputs and Outputs}
+
+\begin{itemize}
+    \item \textbf{Inputs}: Image data captured from cameras, potentially including cluttered backgrounds.
+    \item \textbf{Outputs}: A binary label indicating whether or not a wallet is present in the image.
+\end{itemize}
+
+\subsection{Data Sources}
+Potential data sources may include:
+\begin{itemize}
+    \item Public datasets for object detection, such as COCO (Common Objects in Context), which could be modified or supplemented with wallet-specific data.
+    \item Custom image datasets, potentially gathered from publicly available sources or manually curated by collecting images of wallets in various real-world settings.
+\end{itemize}
+
+
+
+
+\section{Project Idea 2: Film Review Classification}
+
+As for the second proposed idea, according to the study \textit{The Influence of Movie Reviews on Consumers} \cite{influenceCustomers}, positive reviews have the greatest impact on influencing whether people choose to watch a movie. For filmmakers and producers, this distinction between positive and negative feedback can be a valuable tool in shaping audience perception. Understanding and gauging audience reactions is crucial for success in the film industry.
+\\
+The problem is to develop a deep learning model that can binary classify a movie review as positive or negative. This classification can help filmmakers and producers understand audience reactions and make informed decisions.
+\\
+\\
+\subsection{Applications}
+Potential applications for this project may include (but are not limited to):
+\begin{itemize}
+    \item Sentiment analysis for movie reviews
+    \item Audience perception analysis
+    \item Film industry decision-making
+    \item Recommendation systems for movies\\
+\end{itemize}
+\\
+\subsection{Approaches}
+Different approaches to this problem may include:
+
+\begin{itemize}
+    \item \textbf{Machine Learning}: Train a binary classifier using machine learning algorithms such as Gradient Descent using the Adam optimizer \cite{adamOptimizerGFG}.
+    \item \textbf{Deep Learning}: Utilize deep learning architectures such as Supervised Learning or Unsupervised Learning.
+    \item \textbf{Natural Language Processing (NLP)}: Employ NLP techniques such as text preprocessing, tokenization, and feature extraction to analyze the sentiment of movie reviews.
+\end{itemize}
+
+\subsection{Learning Problem}
+
+The learning problem is a \textbf{binary classification} problem, where the goal is to classify a movie review as either positive or negative.
+
+\subsection{Inputs and Outputs}
+
+\begin{itemize}
+    \item \textbf{Inputs}: Movie reviews in the form of text data
+    \item \textbf{Outputs}: Binary classification labels (positive or negative)
+\end{itemize}
+
+\subsection{Data Sources}
+Potential data sources could include non-commercial datasets from: 
+\begin{itemize}
+    \item IMDB
+    \item Rotten Tomatoes 
+    \item Kaggle
+\end{itemize}
+
+\section{Conclusions}
+
+We have more interest in working on project 1 due to its practicality however we feel like we have a more confidence and better understanding of working with project 2. 
+\\
+If given a choice, we would do project 1, however we would need extra assistance on what types of datasets we would need, what computer vision model would be the best to work with, and how we should test our model 
+\\
+\textcolor{red}{Remember to cite sources using BiBTeX and add those references to the end of this document!}
+Sample citation~\cite{Samuel59}
+
+\begin{table}[]
+    \caption{Contributions by team member for Milestone~1.}
+    \centering
+    \begin{tabular}{|c|c|} \hline
+    {\bf Team Member}     &  {\bf Contribution}  \\ \hline
+    Cam Carlson     &  Project writeup \\
+    Pranav Nkam     &  Project ideas and research \\
+    Nick Montemarano     &   Scheduling and time management \\ 
+    Bo Paxton
+    &
+Troubleshooting and backup help
+    \end{tabular}
+    \label{tab:contribution1}
+\end{table}
+
+
+\chapter{Milestone 2: Project Selection}
+
+In this chapter, you should select your project, formally define it, and propose two approaches, each with a work plan.  You should follow the The Heilmeier Catechism~\cite{heilmeier}, which is a set of questions used to evaluate proposed research programs:  
+\begin{enumerate}
+    \item[{\bf HC1}] What are you trying to do? Articulate your objectives using absolutely no jargon.
+   \item[{\bf HC2}] How is it done today, and what are the limits of current practice?
+   \item[{\bf HC3}] What is new in your approach and why do you think it will be successful?
+   \item[{\bf HC4}] Who cares? If you are successful, what difference will it make?
+   \item[{\bf HC5}] What are the risks?
+   \item[{\bf HC6}] How much will it cost?
+   \item[{\bf HC7}] How long will it take?
+   \item[{\bf HC8}] What are the mid-term and final ``exams'' to check for success?
+\end{enumerate}
+
+Also, remember to update your abstract when you've completed this chapter. 
+
+\section{Introduction}
+
+Explain which project you chose, and why. (This may differ from the two you proposed in the previous chapter.) {\bf Include citations.}
+
+\section{Problem Specification}
+
+Formally define your chosen problem, including the following, as subsections\footnote{The four items below are in an enumerated list to make the requirements clear.  Your write-up should not do this; simply have paragraphs of text addressing all the required items.}:
+\begin{enumerate}
+    \item A  statement of your project topic (HC1) that includes a formal discussion of the learning problem, including what the inputs and outputs of your trained model will be.
+    \item Motivation for your topic: Why it is important and interesting (HC3, HC4). If your work is in an application area, be careful to avoid technical jargon from that area that is outside of computer science. If you must use a term, define it as carefully and simply as possible.
+   \item What resources will you need, including data sets and libraries that need to be installed on {\tt swan} (HC6).
+   \item Cite at least three references (at least two published journal or conference papers) (HC2).
+\end{enumerate}
+
+\section{Related Work}
+
+Here, summarize other approaches to this problem.  You should cite each paper and briefly discuss it. {\bf Reviewing related work is critical early on in your project work, because the literature gives ideas on what approaches work and don't work, potential pitfalls, baseline performance to set your expectations, etc.}
+
+
+
+\section{Proposed Method 1: [add name of method and delete brackets]}
+
+Propose a step-by-step approach to solve your chosen problem.  You should include 
+a precise work plan: What you plan to do, what data sets you will test on (including the size of each data set), how you will preprocess the data, what the steps (pipeline) of this method are (e.g., what NN architecture(s) will be used and how they'll be linked), how you will evaluate performance, what baseline(s) from the literature you will compare against, what is your timeline, etc.\ (HC5, HC7, HC8).  One or more of your references should relate to aspects of this. 
+
+
+\section{Proposed Method 2: [add name of method and delete brackets]}
+
+Propose a step-by-step approach to solve your chosen problem.  You should include 
+a precise work plan: What you plan to do, what data sets you will test on (including the size of each data set), how you will preprocess the data, what the steps (pipeline) of this method are  (e.g., what NN architecture(s) will be used and how they'll be linked), how you will evaluate performance, what baseline(s) from the literature you will compare against, what is your timeline, etc.\ (HC5, HC7, HC8).  One or more of your references should relate to aspects of this. 
+
+\section{Conclusions}
+
+Sum up, including your opinion on each approach.  Also, list any questions that you have for the instructor and TA regarding your project work.
+
+\textcolor{red}{Remember to cite sources using   ${\mathrm {B{\scriptstyle {IB}}\!T\!_{\displaystyle E}\!X} }$   and add those references to the end of this document!}
+
+It is okay to cite some websites and tutorials (if you first look up how to properly cite them!), but you must also cite some refereed publications from conferences and/or journals.
+
+Finally, in Table~\ref{tab:contribution2}, list each member of your team with a brief summary of that member's contribution to this milestone.
+
+\begin{table}[]
+    \caption{Contributions by team member for Milestone~2.}
+    \centering
+    \begin{tabular}{|c|c|} \hline
+    {\bf Team Member}     &  {\bf Contribution}  \\ \hline
+    Member1     &  Contribution1 \\
+    Member2     &  Contribution2 \\
+    Member3     &  Contribution3 \\ \hline
+    \end{tabular}
+    \label{tab:contribution2}
+\end{table}
+
+
+\chapter{Milestone 3: Progress Report 1}
+
+\section{Introduction}
+\label{sec:M3-intro}
+
+You will choose one method from Milestone~2 and conduct experiments on it.  (Note that you might end up changing your method one or more times before Milestones 4 and 5, depending on your results with it. But for now, you may just focus on a single approach.)
+
+Remind the reader of the problem you're working on, and what your approach is.  Briefly summarize what your results are so far, including quantification and {\bf comparison to  baseline approach(es)}.
+
+Also, remember to update your abstract when you've completed this chapter.
+
+\section{Related Work}
+
+Here, summarize other work related to yours.  You should cite each paper and briefly discuss it, comparing and contrasting it with your approaches and results. {\bf Reviewing related work is critical early on in your project work, because the literature gives ideas on what approaches work and don't work, potential pitfalls, baseline performance to set your expectations, etc.}
+
+
+\section{Experimental Setup}
+\label{sec:M3-setup}
+
+Describe the setup of your experiments so far in sufficient detail for the reader to reproduce them.  Include data sources, preprocessing used, architectures/other approaches used, hyperparameter values used, performance measures used, baseline(s) from the literature that you compare against, and other relevant items (e.g., cross-validation).
+
+\section{Experimental Results}
+\label{sec:M3-results}
+
+Present your results so far using tables, figures, confusion matrices, etc.\ (whatever is appropriate) for  your approach(es) and the baseline(s). 
+
+\section{Discussion}
+\label{sec:M3-discussion}
+
+Discuss your experimental results, drawing conclusions that are supported by your experimental results of Section~\ref{sec:M3-results}.  Be careful to not draw conclusions that are not supported by the evidence you present! 
+
+
+\section{Work Plan}
+
+Discuss how the results of Section~\ref{sec:M3-discussion} will influence your future experiments.  Include descriptions of what new things you will try, why you'll try them, and what your timeline is for the rest of the semester. 
+
+\section{Conclusion}
+
+Sum up, including your a summary of your results so far (recapitulating that from Section~\ref{sec:M3-intro}).  Also, describe your plans for future work and list any questions that you have for the instructor and TA regarding your project work.
+
+\textcolor{red}{Remember to cite sources using BiBTeX and add those references to the end of this document!}
+
+It is okay to cite some websites and tutorials (if you first look up how to properly cite them!), but you {\bf must} also cite some refereed publications from conferences and/or journals.
+
+Finally, in Table~\ref{tab:contribution3}, list each member of your team with a brief summary of that member's contribution to this milestone.
+
+\begin{table}[]
+    \caption{Contributions by team member for Milestone~3.}
+    \centering
+    \begin{tabular}{|c|c|} \hline
+    {\bf Team Member}     &  {\bf Contribution}  \\ \hline
+    Member1     &  Contribution1 \\
+    Member2     &  Contribution2 \\
+    Member3     &  Contribution3 \\ \hline
+    \end{tabular}
+    \label{tab:contribution3}
+\end{table}
+
+
+\chapter{Milestone 4: Progress Report 2}
+
+
+\section{Introduction}
+\label{sec:M4-intro}
+
+Remind the reader of the problem you're working on, and what your approach is.  Briefly summarize what your results are so far, including quantification and {\bf comparison to  baseline approach(es)}.
+
+Also, remember to update your abstract when you've completed this chapter.
+
+\section{Related Work}
+
+Here, summarize other work related to yours.  You should cite each paper and briefly discuss it, comparing and contrasting it with your approaches and results. 
+ {\bf Reviewing related work is critical early on in your project work, because the literature gives ideas on what approaches work and don't work, potential pitfalls, baseline performance to set your expectations, etc.}
+
+\section{Experimental Setup}
+\label{sec:M3-setup}
+
+Describe the setup of your experiments so far in sufficient detail for the reader to reproduce them.  Include data sources, preprocessing used, architectures/other approaches used, hyperparameter values used, performance measures used, baseline(s) from the literature that you compare against, and other relevant items (e.g., cross-validation).
+
+\section{Experimental Results}
+\label{sec:M4-results}
+
+Present your results so far using tables, figures, confusion matrices, etc.\ (whatever is appropriate) for  your approach(es) and the baseline(s). 
+
+\section{Discussion}
+\label{sec:M4-discussion}
+
+Discuss your experimental results, drawing conclusions that are supported by your experimental results of Section~\ref{sec:M4-results}.  Be careful to not draw conclusions that are not supported by the evidence you present! 
+
+
+\section{Work Plan}
+
+Discuss how the results of Section~\ref{sec:M4-discussion} will influence your future experiments.  Include descriptions of what new things you will try, why you'll try them, and what your timeline is for the rest of the semester. 
+
+\section{Conclusion}
+
+Sum up, including your a summary of your results so far (recapitulating that from Section~\ref{sec:M4-intro}).  Also, describe your plans for future work and list any questions that you have for the instructor and TA regarding your project work.
+
+\textcolor{red}{Remember to cite sources using BiBTeX and add those references to the end of this document!}
+
+It is okay to cite some websites and tutorials (if you first look up how to properly cite them!), but you must also cite some refereed publications from conferences and/or journals.
+
+Finally, in Table~\ref{tab:contribution4}, list each member of your team with a brief summary of that member's contribution to this milestone.
+
+\begin{table}[]
+    \caption{Contributions by team member for Milestone~4.}
+    \centering
+    \begin{tabular}{|c|c|} \hline
+    {\bf Team Member}     &  {\bf Contribution}  \\ \hline
+    Member1     &  Contribution1 \\
+    Member2     &  Contribution2 \\
+    Member3     &  Contribution3 \\ \hline
+    \end{tabular}
+    \label{tab:contribution4}
+\end{table}
+
+\chapter{Milestone 5: Final Report}
+
+
+\section{Introduction}
+\label{sec:M5-intro}
+
+Remind the reader of the problem you're working on, and what your approach is.  Briefly summarize what your final results are, including quantification and {\bf comparison to baseline approach(es)}.
+
+Also, remember to update your abstract when you've completed this chapter.
+
+\section{Related Work}
+
+Here, summarize other work related to yours.  You should cite each paper and briefly discuss it, comparing and contrasting it with your approaches and results. 
+ {\bf Reviewing related work is critical early on in your project work, because the literature gives ideas on what approaches work and don't work, potential pitfalls, baseline performance to set your expectations, etc.}
+ 
+
+\section{Experimental Setup}
+\label{sec:M3-setup}
+
+Describe the setup of your experiments  in sufficient detail for the reader to reproduce them.  Include data sources, preprocessing used, architectures/other approaches used, hyperparameter values used, performance measures used, baseline(s) from the literature that you compare against, and other relevant items (e.g., cross-validation).
+
+\section{Experimental Results}
+\label{sec:M5-results}
+
+Present your results  using tables, figures, confusion matrices, etc.\ (whatever is appropriate) for your approach(es) and the baseline(s). 
+
+\section{Discussion}
+
+Discuss your experimental results, drawing conclusions that are supported by your experimental results of Section~\ref{sec:M5-results}.   Be careful to not draw conclusions that are not supported by the evidence you present!
+
+\section{Conclusion}
+
+Sum up, including your a summary of your results  (recapitulating that from Section~\ref{sec:M5-intro}).  Also, describe possible avenues for future work (should one continue the project) and list any questions that you have for the instructor and TA regarding your project work.
+
+\textcolor{red}{Remember to cite sources using BiBTeX and add those references to the end of this document!}
+
+It is okay to cite some websites and tutorials (if you first look up how to properly cite them!), but you must also cite some refereed publications from conferences and/or journals.
+
+Finally, in Table~\ref{tab:contribution5}, list each member of your team with a brief summary of that member's contribution to this milestone.
+
+\begin{table}[]
+    \caption{Contributions by team member for Milestone~5.}
+    \centering
+    \begin{tabular}{|c|c|} \hline
+    {\bf Team Member}     &  {\bf Contribution}  \\ \hline
+    Member1     &  Contribution1 \\
+    Member2     &  Contribution2 \\
+    Member3     &  Contribution3 \\ \hline
+    \end{tabular}
+    \label{tab:contribution5}
+\end{table}
+
+
+
+\appendix
+
+\chapter{First Appendix}
+
+An appendix is used only if necessary (remove this chapter if you don't use one). It contains supplementary materials/extra details such as extensive experimental results (e.g., hyperparameter search results, where the most interesting ones are in the main text and the rest are dumped here), detailed proofs, etc. 
+
+Create as many appendices as needed by adding chapters. All such chapters must be before the bibliography. 
+
+
+\bibliographystyle{plainurl}
+\bibliography{main}
+
+\end{document}
